@@ -18,17 +18,12 @@ its documented procedures and a description of their interactions.
 
 === 1. Scope
 
-The QMS described in this Quality Manual applies to all products of
-_<your company name>_.
+The QMS described in this Quality Manual applies to all software products of https://github.com/openehr4j[openEHR 4J].
 
-==== Role of Company
+==== Role of Project
 
-____
-Other roles besides manufacturer are: Authorized representative,
-distributor.
-____
-
-_<your company name>_ is a manufacturer of Medical Devices.
+https://github.com/openehr4j[openEHR 4J] is an open source project based on volunteer work.
+Its software products may potentially be used by manufacturers of Medical Devices.
 
 ==== Applicable Standards
 
