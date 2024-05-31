@@ -15,4 +15,4 @@ docker run -it -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-
 
 ## References
 
-- [Template: Quality Manual, Policy, Objectives](https://openregulatory.com/or_template/quality-manual-policy-objectives/) 
+- [Template: Quality Manual, Policy, Objectives | openregulatory.com](https://openregulatory.com/or_template/quality-manual-policy-objectives/) 

@@ -1,0 +1,8 @@
+==== Quality Policy
+
+The mission of this project is to facilitate the implementation of openEHR for hospital information systems (HIS) etc.
+Since HIS vendors may be subject to medical device regulations, it is important to provide high-quality documentation to support their evaluation.
+
+Being a non-commercial open source project, the terms of the https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0] apply in terms of warrenty and liability for the provided software products.
+
+The QMS will be updated on a minimum-effort basis.
