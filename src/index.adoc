@@ -25,6 +25,8 @@ The QMS described in this Quality Manual applies to all software products of htt
 https://github.com/openehr4j[openEHR 4J] is an open source project based on volunteer work.
 Its software products may potentially be used by manufacturers of Medical Devices.
 
+This project is a private initiative that is not affiliated nor endorsed by https://openehr.org[openEHR International].
+
 ==== Applicable Standards
 
 The following table only gives an overview of the most relevant regulation and standards.
