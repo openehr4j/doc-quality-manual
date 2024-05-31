@@ -10,7 +10,7 @@
 ### Compile PDF
 
 ```sh
-docker run -it -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf index.adoc
+docker run -it -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf ./src/index.adoc --out-file ./build/quality-manual.pdf
 ```
 
 ## References
