@@ -27,15 +27,12 @@ Its software products may potentially be used by manufacturers of Medical Device
 
 ==== Applicable Standards
 
-The following table only gives an overview of the most relevant
-regulation and standards. For a comprehensive overview, see the list of
-applicable standards (reference here).
+The following table only gives an overview of the most relevant regulation and standards.
 
 [width="100%",cols="33%,67%",options="header",]
 |===
 |Standard / Regulation / Law |Why Applicable?
-|MDR (2017/745) |Regulation for all Medical Device Manufacturers in the
-EU
+|https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R0745[MDR (2017/745)] |Regulation for all Medical Device Manufacturers in the EU
 
 |EN ISO 13485:2016 |QMS required by essential requirements of MDD/MDR
 
