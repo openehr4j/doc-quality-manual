@@ -5,4 +5,3 @@ Since HIS vendors may be subject to medical device regulations, it is important 
 
 Being a non-commercial open source project, the terms of the https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0] apply in terms of warrenty and liability for the provided software products.
 
-The QMS will be updated on a minimum-effort basis.
