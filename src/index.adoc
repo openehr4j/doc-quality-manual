@@ -1,23 +1,24 @@
-== Quality Manual, Policy and Objectives
+= Quality Manual, Policy and Objectives
+:toc: auto
 
-=== Summary
+== Summary
 
 The Quality Manual describes the scope of the Quality Management System (QMS),
 its documented procedures and a description of their interactions.
 
-=== 1. Scope
+== 1. Scope
 
 The QMS described in this Quality Manual applies to all software products of https://github.com/openehr4j[openEHR 4J].
 
-==== Role of Project
+=== Role of Project
 
 include::role-of-project/index.adoc[]
 
-=== 2. Quality Policy & Objectives
+== 2. Quality Policy & Objectives
 
 include::quality-policy/index.adoc[]
 
-==== Quality Objectives
+=== Quality Objectives
 
 ____
 Whatever policy you outlined above, now you need to make it measurable
@@ -28,7 +29,7 @@ excellence in staff, providing, best-of-class device performance, high
 standards of customer satisfaction, etc.
 ____
 
-==== Key Performance Indicators (KPIs)
+=== Key Performance Indicators (KPIs)
 
 ____
 Auditors might ask you: how do you keep track of a quality objective, to
@@ -59,7 +60,7 @@ single SOP or reference to a separate, central overview sheet. Ideally,
 KPIs are tracked by each process owner independently.
 ____
 
-=== 3. Roles
+== 3. Roles
 
 ____
 Describe the roles of the people in your company. Typically this is done
@@ -143,7 +144,7 @@ management and regulatory affairs
 * At minimum one year of professional experience in the fields of
 quality management and regulatory affairs
 
-=== 4. Processes
+== 4. Processes
 
 ____
 List all your SOPs here. This list is highly company-specific and might
@@ -178,6 +179,17 @@ ____
 |===
 
 '''''
+
+
+[[glossary]]
+== Glossary
+
+[glossary]
+
+SDK:: Software Development Kit. A package developed by a third party that can be used within the source code of the source code of a software product.
+
+[discrete]
+== Legal notice
 
 Template Copyright https://openregulatory.com[openregulatory.com]. See
 https://openregulatory.com/template-license[template license].
