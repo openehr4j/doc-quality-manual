@@ -11,9 +11,7 @@ The QMS described in this Quality Manual applies to all software products of htt
 
 ==== Role of Project
 
-https://github.com/openehr4j[openEHR 4J] is an open source project based on volunteer work.
-
-This project is a private initiative that is not affiliated nor endorsed by https://openehr.org[openEHR International].
+include::role-of-project/index.adoc[]
 
 === 2. Quality Policy & Objectives
 
