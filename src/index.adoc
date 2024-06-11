@@ -1,5 +1,6 @@
 = Quality Manual, Policy and Objectives
 :toc: auto
+:imagesdir: ./img
 
 == Summary
 

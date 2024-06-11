@@ -7,6 +7,13 @@
 
 ## Maintenance
 
+### Compile HTML
+
+```sh
+find . -name "img" -exec cp -r {} ./build \;
+docker run -it -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor ./src/index.adoc --out-file ./build/quality-manual.html
+```
+
 ### Compile PDF
 
 ```sh
