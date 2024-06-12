@@ -7,9 +7,9 @@
 // In addition, the policy should include a commitment to meet legal requirements,
 // keep the QMS up to date and define quality objectives to work towards.
 
-The goal of this project is to facilitate the implementation of openEHR for hospital information systems (HIS) etc.
-Being a non-commercial open source project, the terms of the https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0] apply in terms of warrenty and liability for the provided software products.
+The goal of this project is to facilitate the implementation of openEHR for hospital information systems etc.
 
+Being a non-commercial open source project, the terms of the https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0] apply in terms of warrenty and liability for the provided software products.
 
 === Quality Objectives
 
@@ -19,6 +19,12 @@ Being a non-commercial open source project, the terms of the https://www.apache.
 // and the overall work of your organization. Typical examples are: hiring
 // excellence in staff, providing, best-of-class device performance, high
 // standards of customer satisfaction, etc.
+
+Orientation on standards for medical devices.
+
+Follow best practices for Java projects and open source communities.
+
+Agility. It would be nice to create something useful for society. Adapt according to user feedback.
 
 === Key Performance Indicators (KPIs)
 
