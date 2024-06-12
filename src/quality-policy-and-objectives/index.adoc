@@ -1,0 +1,48 @@
+=== Quality Policy
+
+// Describe what your company is about, specifically, its mission and things
+// which are important for it. Maybe you’re developing software for patients
+// with a certain disease and your goal is to improve their lives.
+
+// In addition, the policy should include a commitment to meet legal requirements,
+// keep the QMS up to date and define quality objectives to work towards.
+
+The goal of this project is to facilitate the implementation of openEHR for hospital information systems (HIS) etc.
+Being a non-commercial open source project, the terms of the https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0] apply in terms of warrenty and liability for the provided software products.
+
+
+=== Quality Objectives
+
+// Whatever policy you outlined above, now you need to make it measurable
+// by defining objectives which can be tracked. Those objectives should not
+// (only) refer to the quality of your devices but the quality of your QMS
+// and the overall work of your organization. Typical examples are: hiring
+// excellence in staff, providing, best-of-class device performance, high
+// standards of customer satisfaction, etc.
+
+=== Key Performance Indicators (KPIs)
+
+// Auditors might ask you: how do you keep track of a quality objective, to
+// see if it was achieved or not? The answer is: Key Performance
+// Indicators. As part of your management review, you have to review all
+// QMS processes plus your quality policy and objectives at least annually.
+// Now, you can meet both requirements at the same time by defining KPIs
+// for your QMS processes. You can then argue that by achieving your KPIs,
+// you make sure that your processes run well, which also meets your
+// quality objectives.
+
+// These are your action items: 1. Make sure to define at least one KPI for
+// each QMS process. 2. Make sure each quality objectives translates into
+// at minimum one process KPI. Where there’s no corresponding process for a
+// quality objective, you define additional KPIs that are not
+// process-related. 3. You can document those KPIs either in each SOP or in
+// a separate overview sheet. For example, you can use the template for a
+// management review report for that purpose.
+
+// Also see regulatory requirements: ISO 13485, para. 4.1.3.a (process
+// KPIs) and para. 5.6.2 (management review input).
+
+// In this section here, describe where you define your KPIs and how you
+// keep track of them. For example, say that you define KPIs in every
+// single SOP or reference to a separate, central overview sheet. Ideally,
+// KPIs are tracked by each process owner independently.
