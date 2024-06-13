@@ -11,7 +11,48 @@ The goal of this project is to facilitate the implementation of openEHR for hosp
 
 Being a non-commercial open source project, the terms of the https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0] apply in terms of warrenty and liability for the provided software products.
 
-=== Quality Objectives
+// Objectives and Key Results
+
+// "An Objective is simply what is to be achieved, no more and no less.
+// By definition, Objectives are significant, concrete, action oriented,
+// and (ideally) inspirational. When properly designed and deployed,
+// they’re a vaccine against fuzzy thinking and ineffective execution."
+//
+// "Key Results benchmark and monitor how we get to the Objective.
+// Effective KRs are specific, time-bound, and aggressive yet realistic.
+// Most of all, they are measurable and verifiable. You either meet a Key
+// Result’s requirements or you don’t — there is no gray area, no room
+// for doubt. At the end of the designated period, typically a quarter,
+// we do a regular check and grade the Key Results as fulfilled or not."
+// 
+// https://www.whatmatters.com/faqs/okr-meaning-definition-example
+
+=== Follow best practices
+
+As foundational building block for software systems it is important that commonly accepted best practices regarding coding conventions and open source project governance are applied as far as possible.
+
+- Core Infrastructure Best Practices
+- Google Java code style
+
+Applying "state-of-the-art" practices might also be regarded as compliance with the standards that apply to medical devices.
+
+=== Zero defects
+
+High reliability should be achieved by prioritizing thorough testing and defect resolution over adding new functionality.
+
+- GitHub issues with label "bug"
+- Test coverage
+
+=== Agility
+
+[quote, attribution, cite title]
+____
+Feedback is no feedback unless it is fed back.
+____
+
+It would be nice to create something useful for society. Adapt according to user feedback.
+
+// === Quality Objectives
 
 // Whatever policy you outlined above, now you need to make it measurable
 // by defining objectives which can be tracked. Those objectives should not
@@ -20,13 +61,7 @@ Being a non-commercial open source project, the terms of the https://www.apache.
 // excellence in staff, providing, best-of-class device performance, high
 // standards of customer satisfaction, etc.
 
-Orientation on standards for medical devices.
-
-Follow best practices for Java projects and open source communities.
-
-Agility. It would be nice to create something useful for society. Adapt according to user feedback.
-
-=== Key Performance Indicators (KPIs)
+// === Key Performance Indicators (KPIs)
 
 // Auditors might ask you: how do you keep track of a quality objective, to
 // see if it was achieved or not? The answer is: Key Performance
