@@ -29,10 +29,6 @@ High reliability should be achieved by prioritizing thorough testing and defect 
 
 ➡️ The code generator projectfootnote:[https://github.com/openehr4j/api-generator] should have a test coverage badge with a score of 90% or more.
 
-=== Agility
-
-It would be nice to create something useful for society. Adapt according to user feedback.
-
 // === Quality Objectives
 
 // Whatever policy you outlined above, now you need to make it measurable
