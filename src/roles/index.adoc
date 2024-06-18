@@ -1,40 +1,39 @@
 === Maintainer
 
-The Maintainer is responsible for:
+Responsibilities:
 
 * Triage feedback in the form of GitHub issues (add labels for type and priority, complete issue description, request further information, etc.)
 * Accept Pull Requests for the source code or request changes
 * Create new releases
 
-Required qualification for this role:
+Required qualification:
 
-* Basic knowledge about open source project governancefootnote:[https://learning.oreilly.com/library/view/open-source-projects/9781837636884, https://www.springerprofessional.de/entwicklung-von-open-source-medizinprodukten/26683052, https://www.springerprofessional.de/open-source-systems-towards-robust-practices/12273848, https://www.springerprofessional.de/pro-freeware-and-open-source-solutions-for-business/23724244, https://www.springerprofessional.de/getting-started-with-open-source-technologies/23237598, https://www.springerprofessional.de/open-source-development-communities-and-quality/1429736, https://www.springerprofessional.de/acquisitions-and-open-source-software-development/19560172, https://www.springerprofessional.de/how-open-source-ate-software/18849402, https://www.springerprofessional.de/firm-sponsored-developers-in-open-source-software-projects/18509110, https://www.springerprofessional.de/open-source-enterprise-software/16827452, https://www.springerprofessional.de/towards-engineering-free-libre-open-source-software-floss-ecosys/16904536, https://www.springerprofessional.de/how-open-source-ate-software/16062018]
+* Basic knowledge about open source project governancefootnote:[https://learning.oreilly.com/library/view/open-source-projects/9781837636884]
 * Advanced knowledge of the Java programming language
 * Basic knowledge of https://project.linuxfoundation.org/hubfs/Reports/oss_supply_chain_security.pdf?hsLang=en[Open Source Software Supply Chain Security], https://slsa.dev[Supply-chain Levels for Software Artifacts] and the https://github.com/ossf/s2c2f/tree/main[Secure Supply Chain Consumption Framework]
 * Advanced knowledge of the version control system Git
 
 === Programmer
 
-The Programmer is responsible for:
+Responsibilities:
 
 * Implement features and fix defects in the code generator
 * Participate in discussions regarding the style of the generated code
 
-Required qualification for this role:
+Required qualification:
 
 * Advanced knowledge of the Java programming language
 * Basic knowledge of the version control system Git
 
 === Technical Writer
 
-The openEHR4j project needs documentation in the form of a project website and README files.
-The person that makes contributions to that documentation is referred to as Technical Writer.
+Responsibilities:
 
-The Technical Writer is responsible for:
+* Create concepts for documentation structure
+* Write usage guides for project website
+* Write README files for Git repositories
 
-* Describing how to apply openEHR4j
-
-Required qualification for this role:
+Required qualification:
 
 * Fluent in English language
 * Basic knowledge of the Java programming language
@@ -42,7 +41,11 @@ Required qualification for this role:
 
 === Client
 
-Required qualification for this role:
+Responsibilities:
 
+* Provide feedback about defects and usability issues
+
+Required qualification:
+
+* Clear communication
 * Advanced knowledge of the Java programming language
-* Basic knowledge of the version control system Git
