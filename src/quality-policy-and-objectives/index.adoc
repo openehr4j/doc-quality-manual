@@ -10,7 +10,7 @@ Being a non-commercial open source project, the terms of the https://www.apache.
 
 === Follow best practices
 
-➡️ The general open source best practice compliance will be measured with a badge from the https://www.bestpractices.dev[OpenSSF Best Practices Badge Program]. 
+➡️ Open source best practice compliance will be measured with a badge from the https://www.bestpractices.dev[OpenSSF Best Practices Badge Program]. 
 
 ➡️ The code style will be checked with the default configuration of https://www.sonarsource.com/products/sonarcloud[SonarCloud] and by using the https://google.github.io/styleguide/javaguide.html[Google Java code style], validated with https://checkstyle.sourceforge.io/google_style.html[Checkstyle].
 
