@@ -14,8 +14,6 @@ Being a non-commercial open source project, the terms of the https://www.apache.
 
 ➡️ The code style will be checked with the default configuration of https://www.sonarsource.com/products/sonarcloud[SonarCloud] and by using the https://google.github.io/styleguide/javaguide.html[Google Java code style], validated with https://checkstyle.sourceforge.io/google_style.html[Checkstyle].
 
-➡️ Applying "state-of-the-art" practices might also be regarded as compliance with the standards that apply to medical devices.
-
 === Zero defects
 
 ➡️ A search on https://github.com[GitHub]footnote:[The service provider for the source code of openehr4j] with the query `org:openehr4j label:bug` should yield 0 results in the "Issues" tab: https://github.com/search?q=org%3Aopenehr4j+label%3Abug&type=issues[github.com].
