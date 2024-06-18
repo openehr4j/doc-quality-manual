@@ -11,6 +11,10 @@ The goal of this project is to facilitate the implementation of openEHR for heal
 
 Being a non-commercial open source project, the terms of the https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0] apply in terms of warrenty and liability for the provided software products.
 
+=== Up-to-dateness
+
+➡️ Given an openEHR specification is supported, when a new version is released, then a new openEHR4j package is released within 30 days.
+
 === Follow best practices
 
 As foundational building block for software systems it is important that commonly accepted best practices regarding coding conventions and open source project governance are applied as far as possible.
