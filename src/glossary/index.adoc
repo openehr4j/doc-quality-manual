@@ -1,0 +1,4 @@
+[glossary]
+
+SDK:: Software Development Kit. A package developed by a third party that can be used within the source code of the source code of a software product.
+SOP:: Standard Operating Procedure. step-by-step instructions for routing operations (also see https://en.wikipedia.org/wiki/Standard_operating_procedure[wikipedia.org] and https://www.sweetprocess.com/kb/qZ5qHx8dqiPNw/article/qJ6xCJkC5R1/defining-the-difference-between-policies-system-process-and-sop[sweetprocess.com])

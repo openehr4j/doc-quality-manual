@@ -30,9 +30,7 @@ include::processes/index.adoc[]
 [[glossary]]
 == Glossary
 
-[glossary]
-
-SDK:: Software Development Kit. A package developed by a third party that can be used within the source code of the source code of a software product.
+include::glossary/index.adoc[]
 
 [discrete]
 == Legal notice
