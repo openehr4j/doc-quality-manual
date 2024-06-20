@@ -6,16 +6,16 @@ Being a non-commercial open source project, the terms of the https://www.apache.
 
 === Up-to-dateness
 
-➡️ Given an openEHR specification is supported, when a new version is released, then a new openEHR4j package is released within 30 days.
+* Given an openEHR specification is supported, when a new version is released, then a new openEHR4j package is released within 30 days.
 
 === Follow best practices
 
-➡️ Open source best practice compliance will be measured with a badge from the https://www.bestpractices.dev[OpenSSF Best Practices Badge Program]. 
+* Open source best practice compliance will be measured with a badge from the https://www.bestpractices.dev[OpenSSF Best Practices Badge Program]. 
 
-➡️ The code style will be checked with the default configuration of https://www.sonarsource.com/products/sonarcloud[SonarCloud] and by using the https://google.github.io/styleguide/javaguide.html[Google Java code style], validated with https://checkstyle.sourceforge.io/google_style.html[Checkstyle].
+* The code style will be checked with the default configuration of https://www.sonarsource.com/products/sonarcloud[SonarCloud] and by using the https://google.github.io/styleguide/javaguide.html[Google Java code style], validated with https://checkstyle.sourceforge.io/google_style.html[Checkstyle].
 
 === Zero defects
 
-➡️ A search on https://github.com[GitHub]footnote:[The service provider for the source code of openehr4j] with the query `org:openehr4j label:bug` should yield 0 results in the "Issues" tab: https://github.com/search?q=org%3Aopenehr4j+label%3Abug&type=issues[github.com].
+* A search on https://github.com[GitHub]footnote:[The service provider for the source code of openehr4j] with the query `org:openehr4j label:bug` should yield 0 results in the "Issues" tab: https://github.com/search?q=org%3Aopenehr4j+label%3Abug&type=issues[github.com].
 
-➡️ The code generator projectfootnote:[https://github.com/openehr4j/api-generator] should have a test coverage badge with a score of 90% or more.
+* The code generator projectfootnote:[https://github.com/openehr4j/api-generator] should have a test coverage badge with a score of 90% or more.

@@ -18,7 +18,9 @@ docker run -it -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor 
 ### Compile PDF
 
 ```sh
+find src -name "img" -exec cp -r {} ./src \;
 docker run -it -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf ./src/index.adoc --out-file ./build/quality-manual.pdf
+rm $(git ls-files --others --exclude-standard) # remove untracked files
 ```
 
 ## References
