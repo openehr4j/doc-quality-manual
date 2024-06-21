@@ -1,3 +1,5 @@
 remote_theme: pages-themes/modernist@v0.2.0
 plugins:
   - jekyll-remote-theme
+title: Quality Manual
+description: The Quality Manual describes the scope of the Quality Management System, its documented procedures and a description of their interactions.
