@@ -74,6 +74,7 @@ echo
 echo "Upload to GitHub Pages"
 echo
 
+git fetch origin
 git checkout gh-pages
 
 mv ${RELEASE_ARTIFACT_DIR} ./${VERSION}
