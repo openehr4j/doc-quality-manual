@@ -73,12 +73,10 @@ mv ./build/quality-manual.pdf ${RELEASE_ARTIFACT_DIR}/pdf/
 echo
 echo "Upload to GitHub Pages"
 echo
-GH_PAGES_DIR=$(mktemp -d)
 
-git clone -b gh-pages --single-branch https://github.com/openehr4j/quality-manual.git ${GH_PAGES_DIR}
+git checkout gh-pages
 
-cd ${GH_PAGES_DIR}
-mv ${RELEASE_ARTIFACT_DIR} ${GH_PAGES_DIR}/${VERSION}
+mv ${RELEASE_ARTIFACT_DIR} ./${VERSION}
 echo "| ${VERSION} | ${TODAY} | [quality-manual.html](./${VERSION}/html/quality-manual.html) | [quality-manual.pdf](./${VERSION}/pdf/quality-manual.pdf) |" >> index.md
 git add .
 git commit -m "Add release artifacts for version ${VERSION}"

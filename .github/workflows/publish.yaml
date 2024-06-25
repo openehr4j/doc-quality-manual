@@ -2,20 +2,35 @@ name: Publish
 on:
   release:
     types: [created]
-
 jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      packages: write
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-java@v1
+        with:
+          distribution: "temurin"
+          java-version: 17
+      - run: ./gradlew publish -Pgpr.user=${{ secrets.GITHUB_ACTOR }} -Pgpr.key=${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "Add git configuration"
         run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "github-action-bot@experimental-software.com"
-      - name: Build and publish
+      - name: Update README
         env:
-          TAG_NAME: ${{ github.ref_name }}
+          CURRENT_VERSION: ${{ github.ref_name }}
         run: |
-          ./.github/scripts/publish_gh_pages.sh -v ${TAG_NAME}
+          git fetch origin
+          git checkout master
+          ./.github/scripts/update_readme.sh ${CURRENT_VERSION}
+          git add README.md
+          git commit -m "docs: update latest version number"
+          git push origin master
+      - name: Update Javadocs on GitHub pages
+        run: |
+          ./.github/scripts/update_javadocs.sh
