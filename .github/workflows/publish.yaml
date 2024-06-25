@@ -17,6 +17,5 @@ jobs:
       - name: Build and publish
         env:
           TAG_NAME: ${{ github.ref_name }}
-          GH_TOKEN: ${{ github.token }}
         run: |
           ./.github/scripts/publish_gh_pages.sh -v ${TAG_NAME}
