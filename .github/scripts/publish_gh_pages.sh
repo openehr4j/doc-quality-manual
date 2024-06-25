@@ -74,10 +74,12 @@ echo
 echo "Upload to GitHub Pages"
 echo
 GH_PAGES_DIR=$(mktemp -d)
-gh repo clone openehr4j/quality-manual ${GH_PAGES_DIR} -- -b gh-pages --single-branch
+
+git clone -b gh-pages --single-branch https://github.com/openehr4j/quality-manual.git ${GH_PAGES_DIR}
+
 cd ${GH_PAGES_DIR}
 mv ${RELEASE_ARTIFACT_DIR} ${GH_PAGES_DIR}/${VERSION}
 echo "| ${VERSION} | ${TODAY} | [quality-manual.html](./${VERSION}/html/quality-manual.html) | [quality-manual.pdf](./${VERSION}/pdf/quality-manual.pdf) |" >> index.md
 git add .
 git commit -m "Add release artifacts for version ${VERSION}"
-git push origin gh-pages
+git push
