@@ -57,7 +57,7 @@ if [[ -d ./build ]]; then
 fi
 mkdir ./build
 find src -name "img" -exec cp -r {} ./build \;
-docker run -it -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor ./src/index.adoc --out-file ./build/quality-manual.html
+docker run -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor ./src/index.adoc --out-file ./build/quality-manual.html
 mv ./build ${RELEASE_ARTIFACT_DIR}/html
 
 echo
@@ -65,7 +65,7 @@ echo "Compile PDF"
 echo
 mkdir ./build
 find src -name "img" -exec cp -r {} ./src \;
-docker run -it -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf ./src/index.adoc --out-file ./build/quality-manual.pdf
+docker run -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf ./src/index.adoc --out-file ./build/quality-manual.pdf
 rm $(git ls-files --others --exclude-standard) && rmdir ./src/img 2> /dev/null # remove untracked files
 mkdir ${RELEASE_ARTIFACT_DIR}/pdf
 mv ./build/quality-manual.pdf ${RELEASE_ARTIFACT_DIR}/pdf/

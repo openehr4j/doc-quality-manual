@@ -15,7 +15,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "github-action-bot@experimental-software.com"
-      - name: Update README
+      - name: Build and publish
         env:
           TAG_NAME: ${{ github.ref_name }}
         run: |
