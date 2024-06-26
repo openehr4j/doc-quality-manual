@@ -3,8 +3,6 @@
 set -e
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-RELEASE_ARTIFACT_DIR=$(mktemp -d)
-TODAY=$(date '+%Y-%m-%d')
 
 ###############################################################################
 # Handle script parameters
@@ -13,10 +11,11 @@ TODAY=$(date '+%Y-%m-%d')
 function usage()
 {
     cat <<-END
-usage: publish-gh-pages.sh -v VERSION [-h]
+usage: $(basename -- "$BASH_SOURCE") -v VERSION -b BUILD_DIR [-h]
 
 required arguments:
   -v    The version number of the published release.
+  -b    The directory where the compiled HTML and PDF should be moved to.
 
 optional arguments:
   -h    Show this help message and exit.
@@ -24,11 +23,14 @@ optional arguments:
 END
 }
 
-while getopts "h v:" o; do
+while getopts "h v: b:" o; do
   case "${o}" in
     v)
       VERSION=${OPTARG}
       ;;
+    b)
+      BUILD_DIR=${OPTARG}
+      ;;      
     h | *)
       usage
       exit 0
@@ -43,11 +45,31 @@ if [[ -z "${VERSION}" ]] ; then
   exit 1
 fi
 
+if [[ -z "${BUILD_DIR}" ]] ; then
+  echo -e "ERROR: Missing required parameter '-b'.\n" >&2
+  usage
+  exit 1
+fi
+
+###############################################################################
+# Functions
+###############################################################################
+
+function has_untracked_files() {
+  local UNTRACKED_FILES=$(git ls-files --others --exclude-standard)
+  [[ ! -z "${UNTRACKED_FILES}" ]]
+}
+
 ###############################################################################
 # Main
 ###############################################################################
 
 cd ${SCRIPT_DIR}/../..
+
+if has_untracked_files ; then
+  echo "ERROR: when this script gets called, there should be no untracked files" >&2
+  exit 1
+fi
 
 echo
 echo "Compile HTML"
@@ -58,7 +80,7 @@ fi
 mkdir ./build
 find src -name "img" -exec cp -r {} ./build \;
 docker run -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor ./src/index.adoc --out-file ./build/quality-manual.html
-mv ./build ${RELEASE_ARTIFACT_DIR}/html
+mv ./build ${BUILD_DIR}/html
 
 echo
 echo "Compile PDF"
@@ -67,18 +89,5 @@ mkdir ./build
 find src -name "img" -exec cp -r {} ./src \;
 docker run -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf ./src/index.adoc --out-file ./build/quality-manual.pdf
 rm $(git ls-files --others --exclude-standard) && rmdir ./src/img 2> /dev/null # remove untracked files
-mkdir ${RELEASE_ARTIFACT_DIR}/pdf
-mv ./build/quality-manual.pdf ${RELEASE_ARTIFACT_DIR}/pdf/
-
-echo
-echo "Upload to GitHub Pages"
-echo
-
-git fetch origin
-git checkout gh-pages
-
-mv ${RELEASE_ARTIFACT_DIR} ./${VERSION}
-echo "| ${VERSION} | ${TODAY} | [quality-manual.html](./${VERSION}/html/quality-manual.html) | [quality-manual.pdf](./${VERSION}/pdf/quality-manual.pdf) |" >> index.md
-git add .
-git commit -m "Add release artifacts for version ${VERSION}"
-git push
+mkdir ${BUILD_DIR}/pdf
+mv ./build/quality-manual.pdf ${BUILD_DIR}/pdf/

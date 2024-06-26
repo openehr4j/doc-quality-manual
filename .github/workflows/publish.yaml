@@ -1,7 +1,8 @@
 name: Publish
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - "*"
 
 jobs:
   publish:
@@ -14,8 +15,10 @@ jobs:
         run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "github-action-bot@experimental-software.com"
-      - name: Build and publish
+      - name: Compile and publish
         env:
           TAG_NAME: ${{ github.ref_name }}
         run: |
-          ./.github/scripts/publish_gh_pages.sh -v ${TAG_NAME}
+          BUILD_DIR=$(mktemp -d)
+          ./.github/scripts/compile.sh -v ${TAG_NAME} -b ${BUILD_DIR}
+          ./.github/scripts/publish.sh -v ${TAG_NAME} -b ${BUILD_DIR}
