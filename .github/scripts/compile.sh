@@ -80,12 +80,18 @@ fi
 mkdir ./build
 find src -name "img" -exec cp -r {} ./build \;
 docker run -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor ./src/index.adoc --out-file ./build/quality-manual.html
-mv ./build ${BUILD_DIR}/html
+if [[ ${BUILD_DIR} != "./build" ]] ; then
+  echo "hello"
+  mv ./build ${BUILD_DIR}/html
+else
+  TEMP_DIR=$(mktemp -d)
+  mv ./build/* ${TEMP_DIR}
+  mv ${TEMP_DIR} ./build/html
+fi
 
 echo
 echo "Compile PDF"
 echo
-mkdir ./build
 find src -name "img" -exec cp -r {} ./src \;
 docker run -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf ./src/index.adoc --out-file ./build/quality-manual.pdf
 rm $(git ls-files --others --exclude-standard) && rmdir ./src/img 2> /dev/null # remove untracked files

@@ -11,8 +11,7 @@
 
 ```sh
 VERSION=0.0.0
-BUILD_DIR=$(mktemp -d)
-./.github/scripts/compile.sh -v ${VERSION} -b ${BUILD_DIR}
+./.github/scripts/compile.sh -v ${VERSION} -b ./build
 ```
 
 ## References

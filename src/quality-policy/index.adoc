@@ -1,0 +1,3 @@
+The goal of this project is to facilitate the implementation of openEHR for healthcare-related information systems.
+
+Being a non-commercial open source project, the terms of the https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0] apply in terms of warrenty and liability for the provided software products.

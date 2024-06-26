@@ -15,15 +15,19 @@ The QMS described in this Quality Manual applies to all software products of htt
 
 include::role-of-project/index.adoc[]
 
-== 2. Quality Policy & Objectives
+== 2. Quality Policy
 
-include::quality-policy-and-objectives/index.adoc[]
+include::quality-policy/index.adoc[]
 
-== 3. Roles
+== 3. Objectives
+
+include::objectives/index.adoc[]
+
+== 4. Roles
 
 include::roles/index.adoc[]
 
-== 4. Processes
+== 5. Processes
 
 include::processes/index.adoc[]
 
