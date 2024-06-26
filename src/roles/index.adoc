@@ -1,12 +1,12 @@
 === Maintainer
 
-Responsibilities:
+**Responsibilities**
 
 * Triage feedback in the form of GitHub issues (add labels for type and priority, complete issue description, request further information, etc.)
 * Accept Pull Requests for the source code or request changes
 * Create new releases
 
-Required qualification:
+**Required qualification**
 
 * Basic knowledge about open source project governancefootnote:[https://learning.oreilly.com/library/view/open-source-projects/9781837636884]
 * Advanced knowledge of the Java programming language
@@ -15,25 +15,25 @@ Required qualification:
 
 === Programmer
 
-Responsibilities:
+**Responsibilities**
 
 * Implement features and fix defects in the code generator
 * Participate in discussions regarding the style of the generated code
 
-Required qualification:
+**Required qualification**
 
 * Advanced knowledge of the Java programming language
 * Basic knowledge of the version control system Git
 
 === Technical Writer
 
-Responsibilities:
+**Responsibilities**
 
 * Create concepts for documentation structure
 * Write usage guides for project website
 * Write README files for Git repositories
 
-Required qualification:
+**Required qualification**
 
 * Fluent in English language
 * Basic knowledge of the Java programming language
@@ -41,11 +41,11 @@ Required qualification:
 
 === Client
 
-Responsibilities:
+**Responsibilities**
 
 * Provide feedback about defects and usability issues
 
-Required qualification:
+**Required qualification**
 
 * Clear communication
 * Advanced knowledge of the Java programming language
