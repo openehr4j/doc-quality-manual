@@ -86,6 +86,7 @@ if [[ ${BUILD_DIR} != "./build" ]] ; then
   mv ./build ${BUILD_DIR}/html
 else
   TEMP_DIR=$(mktemp -d)
+  ls -la ./build/*
   mv ./build/* ${TEMP_DIR}
   mv ${TEMP_DIR} ./build/html
 fi
@@ -97,4 +98,5 @@ find src -name "img" -exec cp -r {} ./src \;
 docker run --user 1000 -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf ./src/index.adoc --out-file ./build/quality-manual.pdf
 remove_untracked_files
 mkdir ${BUILD_DIR}/pdf
+ls -la ./build/quality-manual.pdf
 mv ./build/quality-manual.pdf ${BUILD_DIR}/pdf/
