@@ -60,11 +60,13 @@ function has_untracked_files() {
   [[ ! -z "${UNTRACKED_FILES}" ]]
 }
 
+function remove_untracked_files() {
+  rm $(git ls-files --others --exclude-standard) && rmdir ./src/img 2> /dev/null
+}
+
 ###############################################################################
 # Main
 ###############################################################################
-
-cd ${SCRIPT_DIR}/../..
 
 if has_untracked_files ; then
   echo "ERROR: when this script gets called, there should be no untracked files" >&2
@@ -81,7 +83,6 @@ mkdir ./build
 find src -name "img" -exec cp -r {} ./build \;
 docker run -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor ./src/index.adoc --out-file ./build/quality-manual.html
 if [[ ${BUILD_DIR} != "./build" ]] ; then
-  echo "hello"
   mv ./build ${BUILD_DIR}/html
 else
   TEMP_DIR=$(mktemp -d)
@@ -94,6 +95,6 @@ echo "Compile PDF"
 echo
 find src -name "img" -exec cp -r {} ./src \;
 docker run -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf ./src/index.adoc --out-file ./build/quality-manual.pdf
-rm $(git ls-files --others --exclude-standard) && rmdir ./src/img 2> /dev/null # remove untracked files
+remove_untracked_files
 mkdir ${BUILD_DIR}/pdf
 mv ./build/quality-manual.pdf ${BUILD_DIR}/pdf/

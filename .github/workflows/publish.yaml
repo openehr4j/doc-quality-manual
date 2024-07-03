@@ -20,5 +20,5 @@ jobs:
           TAG_NAME: ${{ github.ref_name }}
         run: |
           BUILD_DIR=$(mktemp -d)
-          ./.github/scripts/compile.sh -v ${TAG_NAME} -b ${BUILD_DIR}
+          ./compile.sh -v ${TAG_NAME} -b ${BUILD_DIR}
           ./.github/scripts/publish.sh -v ${TAG_NAME} -b ${BUILD_DIR}

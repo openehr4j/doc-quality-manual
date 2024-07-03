@@ -11,7 +11,7 @@
 
 ```sh
 VERSION=0.0.0
-./.github/scripts/compile.sh -v ${VERSION} -b ./build
+./compile.sh -v ${VERSION} -b ./build
 ```
 
 ## References
