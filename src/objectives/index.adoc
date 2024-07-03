@@ -11,5 +11,3 @@
 === Zero defects
 
 * A search on https://github.com[GitHub] with the query `org:openehr4j label:bug` should yield 0 results in the "Issues" tabfootnote:[https://github.com/search?q=org%3Aopenehr4j+label%3Abug&type=issues].
-
-* The code generator projectfootnote:[https://github.com/openehr4j/api-generator] should have a test coverage badge with a score of 90% or more.
