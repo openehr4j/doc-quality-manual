@@ -10,8 +10,7 @@
 ### Compile HTML and PDF
 
 ```sh
-VERSION=0.0.0
-./compile.sh -v ${VERSION} -b ./build
+./compile.sh -v 0.0.0 -b ./build
 ```
 
 ## References
