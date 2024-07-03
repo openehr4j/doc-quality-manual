@@ -1,20 +1,15 @@
 ContextMap {
-  contains ehrcommons
   contains KSCHWorkflows
   contains openEHR
-  contains openEHR4j
+  contains openEHR4J
 
-  openEHR4j [D, CF]<-[U, PL] openEHR
+  openEHR4J [D, CF]<-[U, PL] openEHR
 
-  ehrcommons [D, CF]<-[U] openEHR4j
-
-  KSCHWorkflows Customer-Supplier ehrcommons
+  KSCHWorkflows [D, CF]<-[U] openEHR4J
 }
-
-BoundedContext ehrcommons
 
 BoundedContext KSCHWorkflows
 
-BoundedContext openEHR4j
+BoundedContext openEHR4J
 
 BoundedContext openEHR
