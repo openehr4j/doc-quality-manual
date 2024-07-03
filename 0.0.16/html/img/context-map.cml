@@ -1,0 +1,15 @@
+ContextMap {
+  contains KSCHWorkflows
+  contains openEHR
+  contains openEHR4J
+
+  openEHR4J [D, CF]<-[U, PL] openEHR
+
+  KSCHWorkflows [D, CF]<-[U] openEHR4J
+}
+
+BoundedContext KSCHWorkflows
+
+BoundedContext openEHR4J
+
+BoundedContext openEHR
