@@ -5,8 +5,8 @@ It is a private initiative that is not affiliated nor endorsed by https://openeh
 
 === Context Map
 
-The openEHR specificationsfootnote:[https://specifications.openehr.org] are an abstract, programming language independed model for healthcare data.
-The openEHR4J project attempts to provide organizations that implement openEHR with the Java programming language, e.g. the KSCH Workflows projectfootnote:[https://ksch-workflows.github.io], tools which verify the compliance the data models defined in the openEHR specification.
+The https://specifications.openehr.org[openEHR specifications] are an abstract, programming language independed model for healthcare data.
+The openEHR4J project attempts to provide organizations that implement openEHR with the Java programming language, e.g. the https://ksch-workflows.github.io[KSCH Workflows project], tools which verify the compliance the data models defined in the openEHR specification.
 
 The following Context Map diagram provides an overview over the projects related with openEHR4J in the terminology of the Domain-Driven Design methodologyfootnote:[see https://learning.oreilly.com/library/view/domain-driven-design-tackling/0321125215/ch14.html[Domain-Driven Design: Tackling Complexity in the Heart of Software, Eric Evans, 2003, chapter 14]]:
 
@@ -19,4 +19,4 @@ U:: Upstream - a project that provides services to a downstream project
 
 === Relation to openEHR/java-libs
 
-The GitHub project openEHR/java-libsfootnote:[https://github.com/openEHR/java-libs] provides a reference implementation for openEHR in the Java programming languagefootnote:[see https://www.openehr.org/publications/health_ict/R-Chen-etal-openEHR-Java-Impl-Medinfo2007-2007-03-31.pdf[Chen, Rong & Klein, Gunnar. (2007). The openEHR Java reference implementation project. Studies in health technology and informatics. 129. 58-62. 10.3233/978-1-58603-774-1-58.]]. In contrast to openEHR/java-libs, openEHR4J does not provide any components for production use but only helps with the verification of third-party components.
+The GitHub project https://github.com/openEHR/java-libs[openEHR/java-libs] provides a reference implementation for openEHR in the Java programming languagefootnote:[see https://www.openehr.org/publications/health_ict/R-Chen-etal-openEHR-Java-Impl-Medinfo2007-2007-03-31.pdf[Chen, Rong & Klein, Gunnar. (2007). The openEHR Java reference implementation project. Studies in health technology and informatics. 129. 58-62. 10.3233/978-1-58603-774-1-58.]]. In contrast to openEHR/java-libs, openEHR4J does not provide any components for production use but only helps with the verification of third-party components.
