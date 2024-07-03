@@ -81,7 +81,7 @@ if [[ -d ./build ]]; then
 fi
 mkdir ./build
 find src -name "img" -exec cp -r {} ./build \;
-docker run --user 1000 -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor ./src/index.adoc --out-file ./build/quality-manual.html
+docker run -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor ./src/index.adoc --out-file ./build/quality-manual.html
 if [[ ${BUILD_DIR} != "./build" ]] ; then
   mv ./build ${BUILD_DIR}/html
 else
@@ -95,7 +95,7 @@ echo
 echo "Compile PDF"
 echo
 find src -name "img" -exec cp -r {} ./src \;
-docker run --user 1000 -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf ./src/index.adoc --out-file ./build/quality-manual.pdf
+docker run -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf ./src/index.adoc --out-file ./build/quality-manual.pdf
 remove_untracked_files
 mkdir ${BUILD_DIR}/pdf
 ls -la ./build/quality-manual.pdf
