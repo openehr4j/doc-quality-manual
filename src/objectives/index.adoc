@@ -10,4 +10,4 @@
 
 === Zero defects
 
-* A search on https://github.com[GitHub] with the query `org:openehr4j label:bug` should yield 0 results in the "Issues" tabfootnote:[https://github.com/search?q=org%3Aopenehr4j+label%3Abug&type=issues].
+* A search on https://github.com[GitHub] with the query `org:openehr4j label:bug` should yield 0 results with state "Open" in the "Issues" tabfootnote:[hhttps://github.com/search?q=org%3Aopenehr4j+label%3Abug++&type=issues&state=open].
